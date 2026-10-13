@@ -3,17 +3,17 @@ name: My First Workflow
 on: push
 
 jobs:
-    - job: 
-        runs-on: ubantu-latest
-        steps: 
-        - name: Checkout Repo
-          uses: actions/checkout@v4
+  job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
 
-        - name: Welcome Message
-          run: echo "My first github Action"
+      - name: Welcome Message
+        run: echo "My first github Action"
 
-        - name: list all files
-          run: ls
+      - name: list all files
+        run: ls
 
-        - name: Read file
-          run: cat README.md
+      - name: Read file
+        run: cat README.md
