@@ -10,6 +10,6 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Executing Shell script
-        run:  |
-          chmod +x ascii-scripts.sh
+        run: |
+          chmod +x ./ascii-scripts.sh
           ./ascii-scripts.sh
